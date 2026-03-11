@@ -25,19 +25,19 @@ if (hamburger) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const tabButtons = document.querySelectorAll('.tab-button');
-    
+
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {
             // Remove classe active de todos os botões
             tabButtons.forEach(btn => btn.classList.remove('active'));
-            
+
             // Remove classe active de todos os conteúdos
             const tabContents = document.querySelectorAll('.tab-content');
             tabContents.forEach(content => content.classList.remove('active'));
-            
+
             // Adiciona classe active ao botão clicado
             button.classList.add('active');
-            
+
             // Adiciona classe active ao conteúdo correspondente
             const tabId = button.getAttribute('data-tab');
             const tabContent = document.getElementById(tabId);
@@ -104,7 +104,7 @@ document.querySelectorAll('.result-card, .team-member, .about-info').forEach(el 
 
 window.addEventListener('scroll', () => {
     let current = '';
-    
+
     const sections = document.querySelectorAll('section');
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
@@ -169,7 +169,7 @@ mutationObserver.observe(document.body, {
 // Detectar preferência de tema escuro do sistema
 function initDarkModeSupport() {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     // Você pode adicionar suporte a tema escuro aqui se desejar
     // Por enquanto, mantemos o tema claro como padrão
 }

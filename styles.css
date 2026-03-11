@@ -622,6 +622,7 @@ section {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -752,16 +753,16 @@ section {
 
 .about-images-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     margin-top: 40px;
 }
 
 .image-item {
     background-color: white;
-    border-radius: 8px;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: var(--transition);
 }
 
@@ -772,16 +773,16 @@ section {
 
 .image-item img {
     width: 100%;
-    height: 250px;
+    height: 350px;
     object-fit: cover;
     display: block;
 }
 
 .image-item-small {
     background-color: white;
-    border-radius: 8px;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: var(--transition);
 }
 
@@ -792,16 +793,21 @@ section {
 
 .image-item-small img {
     width: 100%;
-    height: 200px;
+    height: 350px;
     object-fit: cover;
     display: block;
 }
 
+.img-contain {
+    object-fit: contain !important;
+    background-color: var(--bg-light);
+}
+
 .objectives-images {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-bottom: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
 .image-caption {
