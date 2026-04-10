@@ -1,5 +1,5 @@
 // ============================================
-// MENU MOBILE
+// MOBILE MENU
 // ============================================
 
 const hamburger = document.getElementById('hamburger');
@@ -10,7 +10,7 @@ if (hamburger) {
         navMenu.classList.toggle('active');
     });
 
-    // Fechar menu ao clicar em um link
+    // Close menu when clicking on a link
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
@@ -20,7 +20,7 @@ if (hamburger) {
 }
 
 // ============================================
-// ABAS DE OBJETIVOS
+// OBJECTIVES TABS
 // ============================================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -28,17 +28,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Remove classe active de todos os botões
+            // Remove active class from all buttons
             tabButtons.forEach(btn => btn.classList.remove('active'));
 
-            // Remove classe active de todos os conteúdos
+            // Remove active class from all contents
             const tabContents = document.querySelectorAll('.tab-content');
             tabContents.forEach(content => content.classList.remove('active'));
 
-            // Adiciona classe active ao botão clicado
+            // Add active class to the clicked button
             button.classList.add('active');
 
-            // Adiciona classe active ao conteúdo correspondente
+            // Add active class to the corresponding content
             const tabId = button.getAttribute('data-tab');
             const tabContent = document.getElementById(tabId);
             if (tabContent) {
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Ativa a primeira aba por padrão
+    // Activate the first tab by default
     const firstTab = document.querySelector('.tab-button');
     if (firstTab) {
         firstTab.click();
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ============================================
-// SCROLL SUAVE
+// SMOOTH SCROLL
 // ============================================
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -75,7 +75,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ============================================
-// ANIMAÇÃO AO SCROLL (Intersection Observer)
+// SCROLL ANIMATION (Intersection Observer)
 // ============================================
 
 const observerOptions = {
@@ -92,14 +92,14 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observar cards e elementos
+// Observe cards and elements
 document.querySelectorAll('.result-card, .team-member, .about-info').forEach(el => {
     el.style.opacity = '0';
     observer.observe(el);
 });
 
 // ============================================
-// HIGHLIGHT SEÇÃO ATIVA NA NAVEGAÇÃO
+// HIGHLIGHT ACTIVE SECTION IN NAVIGATION
 // ============================================
 
 window.addEventListener('scroll', () => {
@@ -123,7 +123,7 @@ window.addEventListener('scroll', () => {
 });
 
 // ============================================
-// ADICIONAR ESTILO PARA LINK ATIVO
+// ADD STYLE FOR ACTIVE LINK
 // ============================================
 
 const style = document.createElement('style');
@@ -135,13 +135,13 @@ style.textContent = `
 document.head.appendChild(style);
 
 // ============================================
-// FUNÇÃO PARA AJUSTAR ALTURA DO IFRAME
+// FUNCTION TO ADJUST IFRAME HEIGHT
 // ============================================
 
-// Esta função permite que a página se ajuste melhor quando incorporada como iframe
+// This function allows the page to adjust better when embedded as an iframe
 function adjustIframeHeight() {
     if (window.parent !== window) {
-        // Página está dentro de um iframe
+        // Page is inside an iframe
         const height = document.documentElement.scrollHeight;
         window.parent.postMessage({
             type: 'iframeHeight',
@@ -150,11 +150,11 @@ function adjustIframeHeight() {
     }
 }
 
-// Chamar ao carregar e quando o conteúdo muda
+// Call on load and when content changes
 window.addEventListener('load', adjustIframeHeight);
 window.addEventListener('resize', adjustIframeHeight);
 
-// Observar mudanças no DOM
+// Observe DOM changes
 const mutationObserver = new MutationObserver(adjustIframeHeight);
 mutationObserver.observe(document.body, {
     childList: true,
@@ -163,23 +163,23 @@ mutationObserver.observe(document.body, {
 });
 
 // ============================================
-// SUPORTE A TEMAS ESCUROS (OPCIONAL)
+// DARK THEME SUPPORT (OPTIONAL)
 // ============================================
 
-// Detectar preferência de tema escuro do sistema
+// Detect system dark theme preference
 function initDarkModeSupport() {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-    // Você pode adicionar suporte a tema escuro aqui se desejar
-    // Por enquanto, mantemos o tema claro como padrão
+    // You can add dark theme support here if desired
+    // For now, we keep the light theme as default
 }
 
 initDarkModeSupport();
 
 // ============================================
-// CONSOLE LOG PARA DEBUG
+// CONSOLE LOG FOR DEBUGGING
 // ============================================
 
-console.log('Página RAM carregada com sucesso');
-console.log('Versão: 1.0');
-console.log('Compatível com iframe em Wix');
+console.log('RAM page loaded successfully');
+console.log('Version: 1.0');
+console.log('Compatible with Wix iframe');
