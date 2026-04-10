@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Monitoring and Detection of Antimicrobial Resistance Patterns in Brazilian Biomes">
-    <title>AMR - Antimicrobial Resistance</title>
+    <meta name="description" content="Monitoramento e Detecção de Padrões de Resistência Antimicrobiana em Biomas Brasileiros">
+    <title>RAM - Resistência Antimicrobiana</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
 </head>
 
 <body>
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">
-                <span class="logo-text">AMR</span>
-                <span class="logo-subtitle">Antimicrobial Resistance</span>
+                <span class="logo-text">RAM</span>
+                <span class="logo-subtitle" data-i18n="logoSubtitle">Resistência Antimicrobiana</span>
             </div>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="https://inctcerbc.wixsite.com/inctcerb" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#objectives" class="nav-link">Objectives</a></li>
-                <li><a href="#team" class="nav-link">Team</a></li>
-                <li><a href="#results" class="nav-link">Results</a></li>
-                <li><a href="#sponsors" class="nav-link">Sponsors</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="https://inctcerbc.com" class="nav-link" data-i18n="navHome">Home</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="navAbout">Sobre</a></li>
+                <li><a href="#objectives" class="nav-link" data-i18n="navObjectives">Objetivos</a></li>
+                <li><a href="#team" class="nav-link" data-i18n="navTeam">Equipe</a></li>
+                <li><a href="#results" class="nav-link" data-i18n="navResults">Resultados</a></li>
+                <li><a href="#sponsors" class="nav-link" data-i18n="navSponsors">Patrocinadores</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="navContact">Contato</a></li>
+                <li class="lang-switcher">
+                    <a href="javascript:void(0)" onclick="setLang('pt')" title="Português" class="lang-btn" id="lang-pt">
+                        <span class="flag-icon flag-icon-br"></span> PT
+                    </a>
+                    <a href="javascript:void(0)" onclick="setLang('en')" title="English" class="lang-btn" id="lang-en">
+                        <span class="flag-icon flag-icon-us"></span> EN
+                    </a>
+                    <a href="javascript:void(0)" onclick="setLang('es')" title="Español" class="lang-btn" id="lang-es">
+                        <span class="flag-icon flag-icon-es"></span> ES
+                    </a>
+                </li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -36,41 +47,34 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Monitoring and Detection of Antimicrobial Resistance Patterns</h1>
-            <p class="hero-subtitle">Genetic Diversity among Clinical and Environmental Isolates from Various Brazilian Biomes</p>
-            <p class="hero-meta">CNPq/MCTI/CT-Health Call - Actions in Science, Technology and Innovation to Combat AMR
-                No. 52/2022</p>
+            <h1 data-i18n="heroTitle">Monitoramento e Detecção de Padrões de Resistência Antimicrobiana</h1>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">Diversidade Genética entre Isolados Clínicos e Ambientais de Vários Biomas Brasileiros</p>
+            <p class="hero-meta" data-i18n="heroMeta">Chamada CNPq/MCTI/CT-Saúde - Ações em Ciência, Tecnologia e Inovação para o Combate à RAM Nº 52/2022</p>
         </div>
     </section>
 
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2>About the Project</h2>
+                <h2 data-i18n="aboutTitle">Sobre o Projeto</h2>
                 <div class="header-line"></div>
             </div>
 
             <div class="about-content">
                 <div class="about-info">
-                    <h3>Coordinator</h3>
+                    <h3 data-i18n="aboutCoordLabel">Coordenadora</h3>
                     <p><strong>Prof. Dra. Vania Aparecida Vicente</strong></p>
-                    <p>Federal University of Paraná (UFPR)</p>
+                    <p data-i18n="aboutCoordInst">Universidade Federal do Paraná (UFPR)</p>
                 </div>
 
                 <div class="about-info">
-                    <h3>Thematic Line</h3>
-                    <p>VI. Research Networks for identification, monitoring and genetic sequencing of resistant strains
-                        throughout the national territory</p>
+                    <h3 data-i18n="aboutLineLabel">Linha Temática</h3>
+                    <p data-i18n="aboutLineText">VI. Redes de pesquisa para identificação, monitoramento e sequenciamento genético de cepas resistentes em todo o território nacional</p>
                 </div>
 
                 <div class="about-description">
-                    <h3>Description</h3>
-                    <p>This project establishes a network for monitoring and detecting antimicrobial resistance (AMR)
-                        patterns in causative agents of infectious-parasitic diseases, preserved in reference collection
-                        repositories and in environmental samples from various Brazilian biomes. It uses metagenomic
-                        approach and NGS sequencing, aiming at the development of a widely accessible panel, with
-                        application of notification of the circulation of AMR genes and species in Brazilian
-                        macroregions.</p>
+                    <h3 data-i18n="aboutDescLabel">Descrição</h3>
+                    <p data-i18n="aboutDescText">Este projeto estabelece uma rede para monitoramento e detecção de padrões de resistência antimicrobiana (RAM) em agentes causadores de doenças infecto-parasitárias, preservados em repositórios de coleções de referência e em amostras ambientais de vários biomas brasileiros. Utiliza abordagem metagenômica e sequenciamento NGS, visando o desenvolvimento de um painel amplamente acessível, com aplicação de notificação da circulação de genes e espécies RAM em macrorregiões brasileiras.</p>
                 </div>
             </div>
 
@@ -91,19 +95,14 @@
     <section id="objectives" class="objectives">
         <div class="container">
             <div class="section-header">
-                <h2>Objectives</h2>
+                <h2 data-i18n="objTitle">Objetivos</h2>
                 <div class="header-line"></div>
             </div>
 
             <div class="objectives-content">
                 <div class="objective-general">
-                    <h3>General Objective</h3>
-                    <p>Establish a network for monitoring and detecting antimicrobial resistance (AMR) patterns in
-                        causative agents of infectious-parasitic diseases, preserved in reference collection
-                        repositories and in environmental samples from various Brazilian biomes, through metagenomic
-                        approach and NGS sequencing, aiming at the development of a widely accessible panel, with
-                        application of notification of the circulation of AMR genes and species in Brazilian
-                        macroregions.</p>
+                    <h3 data-i18n="objGeneralLabel">Objetivo Geral</h3>
+                    <p data-i18n="objGeneralText">Estabelecer uma rede para monitoramento e detecção de padrões de resistência antimicrobiana (RAM) em agentes causadores de doenças infecto-parasitárias, preservados em repositórios de coleções de referência e em amostras ambientais de vários biomas brasileiros, através de abordagem metagenômica e sequenciamento NGS, visando o desenvolvimento de um painel amplamente acessível, com aplicação de notificação da circulação de genes e espécies RAM em macrorregiões brasileiras.</p>
                 </div>
 
                 <div class="objectives-images">
@@ -116,7 +115,7 @@
                 </div>
 
                 <div class="objectives-specific">
-                    <h3>Specific Objectives</h3>
+                    <h3 data-i18n="objSpecificLabel">Objetivos Específicos</h3>
                     <div class="tabs">
                         <button class="tab-button active" data-tab="tab1">1-5</button>
                         <button class="tab-button" data-tab="tab2">6-10</button>
@@ -124,37 +123,21 @@
 
                     <div id="tab1" class="tab-content active">
                         <ol class="objectives-list">
-                            <li>Elucidate through phenotypic and molecular markers the resistance profile of clinical
-                                and environmental strains deposited in different repositories of reference and working
-                                collections of public institutions and hospitals and private laboratories, located in
-                                different Brazilian macroregions.</li>
-                            <li>Sequence the complete genome of strains with resistance profile of fungi, bacteria and
-                                protozoa, aiming at the creation of databases of resistant species and genes.</li>
-                            <li>Build fosmid libraries and perform functional screening for elucidation of new targets
-                                in resistant strains.</li>
-                            <li>Establish a temporal line of AMR in fungi, bacteria and parasites based on the history
-                                of repository deposits.</li>
-                            <li>Perform metagenome analyses and bioprospecting of environmental samples, hemodialysis
-                                water and biological waste from hospital disposal, aiming at environmental tracking of
-                                AMR species and genes through target-specific and total metagenomic approaches.</li>
+                            <li data-i18n="obj1">Elucidar por meio de marcadores fenotípicos e moleculares o perfil de resistência de cepas clínicas e ambientais depositadas em diferentes repositórios de coleções de referência e de trabalho de instituições públicas e hospitais e laboratórios privados, localizados em diferentes macrorregiões brasileiras.</li>
+                            <li data-i18n="obj2">Sequenciar o genoma completo de cepas com perfil de resistência de fungos, bactérias e protozoários, visando a criação de bancos de dados de espécies e genes resistentes.</li>
+                            <li data-i18n="obj3">Construir bibliotecas fosmídicas e realizar triagem funcional para elucidação de novos alvos em cepas resistentes.</li>
+                            <li data-i18n="obj4">Estabelecer uma linha temporal da RAM em fungos, bactérias e parasitas com base no histórico de depósitos em repositórios.</li>
+                            <li data-i18n="obj5">Realizar análises metagenômicas e bioprospecção de amostras ambientais, água de hemodiálise e resíduos biológicos de descarte hospitalar, visando o rastreamento ambiental de espécies e genes RAM por abordagens metagenômicas específicas de alvo e totais.</li>
                         </ol>
                     </div>
 
                     <div id="tab2" class="tab-content">
                         <ol class="objectives-list" start="6">
-                            <li>Compare metagenomic data (target-specific, total library and fosmid library) from
-                                conserved environments (biomes Amazon, Cerrado, Atlantic Forest, Pantanal) and
-                                anthropized (agricultural regions and deforested areas) and from evaluated repositories
-                                and build new barcodes.</li>
-                            <li>Perform in silico search of resistant species and genes in metagenomic banks of
-                                cultivated and uncultivated soils and diversified ecosystems, including human gut
-                                microbiome banks previously developed by project collaborating members.</li>
-                            <li>Correlate AMR data from different approaches aiming to track cross-AMR occurrence in
-                                clinical and environmental settings.</li>
-                            <li>Select possible AMR genes as candidates for new markers through emerging artificial
-                                intelligence techniques in bioinformatics.</li>
-                            <li>Create a real-time data recording panel based on AMR strain prospecting and resistance
-                                genes aiming to feed and expand existing notification systems.</li>
+                            <li data-i18n="obj6">Comparar dados metagenômicos (específico de alvo, biblioteca total e biblioteca fosmídica) de ambientes conservados (biomas Amazônia, Cerrado, Mata Atlântica, Pantanal) e antropizados (regiões agrícolas e áreas desmatadas) e dos repositórios avaliados e construir novos barcodes.</li>
+                            <li data-i18n="obj7">Realizar busca in silico de espécies e genes resistentes em bancos metagenômicos de solos cultivados e não cultivados e ecossistemas diversificados, incluindo bancos de microbioma intestinal humano previamente desenvolvidos por membros colaboradores do projeto.</li>
+                            <li data-i18n="obj8">Correlacionar dados de RAM de diferentes abordagens visando rastrear a ocorrência de RAM cruzada em ambientes clínicos e ambientais.</li>
+                            <li data-i18n="obj9">Selecionar possíveis genes de RAM como candidatos a novos marcadores por meio de técnicas emergentes de inteligência artificial em bioinformática.</li>
+                            <li data-i18n="obj10">Criar um painel de registro de dados em tempo real baseado na prospecção de cepas RAM e genes de resistência visando alimentar e expandir os sistemas de notificação existentes.</li>
                         </ol>
                     </div>
                 </div>
@@ -165,12 +148,12 @@
     <section id="team" class="team">
         <div class="container">
             <div class="section-header">
-                <h2>Executing Team</h2>
+                <h2 data-i18n="teamTitle">Equipe Executora</h2>
                 <div class="header-line"></div>
             </div>
 
             <div class="team-section">
-                <h3>Managers - National Focal Groups</h3>
+                <h3 data-i18n="teamNationalLabel">Gestores - Grupos Focais Nacionais</h3>
                 <div class="team-grid-national">
                     <div class="team-member">
                         <img src="images/prof-Vania.jpeg" alt="Prof. V. A. Vicente" class="member-photo" loading="lazy">
@@ -178,112 +161,94 @@
                         <p>UFPR-CMRP/Taxonline UFPR/PR</p>
                     </div>
                     <div class="team-member">
-                        <img src="images/prof-terezinha.jpeg" alt="Prof. Terezinha I. E. Svidzinski"
-                            class="member-photo" loading="lazy">
+                        <img src="images/prof-terezinha.jpeg" alt="Prof. Terezinha I. E. Svidzinski" class="member-photo" loading="lazy">
                         <h4>Prof. Terezinha I. E. Svidzinski</h4>
                         <p>CMRP/Taxonline-UEM/PR</p>
                     </div>
                     <div class="team-member">
-                        <img src="images/Prof_Juliana.jpeg" alt="Prof. Juliana V. M. Bittencourt" class="member-photo"
-                            loading="lazy">
+                        <img src="images/Prof_Juliana.jpeg" alt="Prof. Juliana V. M. Bittencourt" class="member-photo" loading="lazy">
                         <h4>Prof. Juliana V. M. Bittencourt</h4>
                         <p>CMRP/Taxonline-UTFPR/PR</p>
                     </div>
                     <div class="team-member">
-                        <img src="images/prof-Matsuura.jpeg" alt="Prof. A.B. J. Matsuura" class="member-photo"
-                            loading="lazy">
+                        <img src="images/prof-Matsuura.jpeg" alt="Prof. A.B. J. Matsuura" class="member-photo" loading="lazy">
                         <h4>Prof. A.B. J. Matsuura</h4>
                         <p>Fiocruz Amazônia AM</p>
                     </div>
                     <div class="team-member">
-                        <img src="images/prof-Marcia.jpeg" alt="Prof. Marcia S. C. Melhem" class="member-photo"
-                            loading="lazy">
+                        <img src="images/prof-Marcia.jpeg" alt="Prof. Marcia S. C. Melhem" class="member-photo" loading="lazy">
                         <h4>Prof. Marcia S. C. Melhem</h4>
                         <p>UFMS - MS</p>
                     </div>
                     <div class="team-member">
-                        <img src="images/prof-Emanuel.jpeg" alt="Prof. Emanuel M. de Souza" class="member-photo"
-                            loading="lazy">
+                        <img src="images/prof-Emanuel.jpeg" alt="Prof. Emanuel M. de Souza" class="member-photo" loading="lazy">
                         <h4>Prof. Emanuel M. de Souza</h4>
                         <p>UFPR - PR</p>
                     </div>
                     <div class="team-member">
-                        <img src="images/prof-Cristina.jpeg" alt="Prof. Cristina M. S. Motta" class="member-photo"
-                            loading="lazy">
+                        <img src="images/prof-Cristina.jpeg" alt="Prof. Cristina M. S. Motta" class="member-photo" loading="lazy">
                         <h4>Prof. Cristina M. S. Motta</h4>
                         <p>URM-UFPE - PE</p>
                     </div>
-
                     <div class="team-member">
-                        <img src="images/prof-Conceicao.jpeg" alt="Prof. Conceição M. P. S. de Azevedo"
-                            class="member-photo" loading="lazy">
+                        <img src="images/prof-Conceicao.jpeg" alt="Prof. Conceição M. P. S. de Azevedo" class="member-photo" loading="lazy">
                         <h4>Prof. Conceição M. P. S. de Azevedo</h4>
                         <p>UFMA - MA</p>
                     </div>
                     <div class="team-member">
-                        <img src="images/prof-Libera.jpeg" alt="Prof. Líbera M. Dalla Costa" class="member-photo"
-                            loading="lazy">
+                        <img src="images/prof-Libera.jpeg" alt="Prof. Líbera M. Dalla Costa" class="member-photo" loading="lazy">
                         <h4>Prof. Líbera M. Dalla Costa</h4>
                         <p>IPP-PR</p>
                     </div>
                     <div class="team-member">
-                        <img src="images/prof-Arnaldo.jpeg" alt="Prof. Arnaldo L. Colombo" class="member-photo"
-                            loading="lazy">
+                        <img src="images/prof-Arnaldo.jpeg" alt="Prof. Arnaldo L. Colombo" class="member-photo" loading="lazy">
                         <h4>Prof. Arnaldo L. Colombo</h4>
                         <p>UNIFESP - SP</p>
                     </div>
                     <div class="team-member">
-                        <img src="images/dra-Gloria.jpeg" alt="Dra. M. Glória S. Stafocker" class="member-photo"
-                            loading="lazy">
+                        <img src="images/dra-Gloria.jpeg" alt="Dra. M. Glória S. Stafocker" class="member-photo" loading="lazy">
                         <h4>Dra. M. Glória S. Stafocker</h4>
                         <p>MT-USP/SP</p>
                     </div>
                     <div class="team-member">
-                        <img src="images/prof-Flavio.png" alt="Prof. Flávio Queiroz-Telles" class="member-photo"
-                            loading="lazy">
+                        <img src="images/prof-Flavio.png" alt="Prof. Flávio Queiroz-Telles" class="member-photo" loading="lazy">
                         <h4>Prof. Flávio Queiroz-Telles</h4>
                         <p>CHC-UFPR - PR</p>
                     </div>
                     <div class="team-member">
-                        <img src="images/prof-Rafaella.jpeg" alt="Prof. Rafaella C. B. Santos" class="member-photo"
-                            loading="lazy">
+                        <img src="images/prof-Rafaella.jpeg" alt="Prof. Rafaella C. B. Santos" class="member-photo" loading="lazy">
                         <h4>Prof. Rafaella C. B. Santos</h4>
                         <p>UNILA - PR</p>
                     </div>
                     <div class="team-member">
-                        <img src="images/prof-Keite.jpeg" alt="Prof. Keite Nogueira" class="member-photo"
-                            loading="lazy">
+                        <img src="images/prof-Keite.jpeg" alt="Prof. Keite Nogueira" class="member-photo" loading="lazy">
                         <h4>Prof. Keite Nogueira</h4>
                         <p>CHC-UFPR - PR</p>
                     </div>
                     <div class="team-member">
-                        <img src="images/prof-Vanete.jpeg" alt="Prof. Vanete Thomaz-Soccol" class="member-photo"
-                            loading="lazy">
+                        <img src="images/prof-Vanete.jpeg" alt="Prof. Vanete Thomaz-Soccol" class="member-photo" loading="lazy">
                         <h4>Prof. Vanete Thomaz-Soccol</h4>
-                        <p>UFPR / PR - Parasitological Collection</p>
+                        <p data-i18n="teamVaneteInst">UFPR / PR - Coleção Parasitológica</p>
                     </div>
                 </div>
             </div>
 
             <div class="team-section">
-                <h3>International Partnership</h3>
+                <h3 data-i18n="teamIntlLabel">Parceria Internacional</h3>
                 <div class="team-grid-international">
                     <div class="international-member">
                         <div class="member-with-logo">
-                            <img src="images/prof-Sybren.jpeg" alt="Prof. Sybren de Hoog" class="member-photo"
-                                loading="lazy">
+                            <img src="images/prof-Sybren.jpeg" alt="Prof. Sybren de Hoog" class="member-photo" loading="lazy">
                             <h4>Prof. Sybren de Hoog</h4>
-                            <p>Radboud University Netherlands</p>
+                            <p data-i18n="teamSybrenInst">Universidade Radboud, Países Baixos</p>
                         </div>
                         <div class="institution-logo">
                             <img src="images/Radboud.png" alt="RadboudUMC Logo" class="logo-img" loading="lazy">
                         </div>
                     </div>
-
                     <div class="international-member">
                         <div class="member-with-logo">
-                            <img src="images/prof-Eelco.jpeg" alt="Prof. Eelco Meijer" class="member-photo"
-                                loading="lazy">
+                            <img src="images/prof-Eelco.jpeg" alt="Prof. Eelco Meijer" class="member-photo" loading="lazy">
                             <h4>Prof. Eelco Meijer</h4>
                             <p>CWZ/RadboudUMC Netherlands</p>
                         </div>
@@ -291,11 +256,9 @@
                             <img src="images/cyyz.png" alt="CWZ Logo" class="logo-img" loading="lazy">
                         </div>
                     </div>
-
                     <div class="international-member">
                         <div class="member-with-logo">
-                            <img src="images/prof-Amir.png" alt="Prof. Amir Seyedmousavi" class="member-photo"
-                                loading="lazy">
+                            <img src="images/prof-Amir.png" alt="Prof. Amir Seyedmousavi" class="member-photo" loading="lazy">
                             <h4>Prof. Amir Seyedmousavi</h4>
                             <p>NIH USA</p>
                         </div>
@@ -303,38 +266,31 @@
                             <img src="images/nih.png" alt="NIH Logo" class="logo-img" loading="lazy">
                         </div>
                     </div>
-
                     <div class="international-member">
                         <div class="member-with-logo">
-                            <img src="images/prof-Nina.jpeg" alt="Prof. Nina Gunde-Cimerman" class="member-photo"
-                                loading="lazy">
+                            <img src="images/prof-Nina.jpeg" alt="Prof. Nina Gunde-Cimerman" class="member-photo" loading="lazy">
                             <h4>Prof. Nina Gunde-Cimerman</h4>
-                            <p>Ljubljana University Slovenia</p>
+                            <p data-i18n="teamNinaInst">Universidade de Ljubljana, Eslovênia</p>
                         </div>
                         <div class="institution-logo">
-                            <img src="images/university-Slovenia.png" alt="Ljubljana Logo" class="logo-img"
-                                loading="lazy">
+                            <img src="images/university-Slovenia.png" alt="Ljubljana Logo" class="logo-img" loading="lazy">
                         </div>
                     </div>
-
                     <div class="international-member">
                         <div class="member-with-logo">
-                            <img src="images/prof-Laura.jpeg" alt="Prof. Laura Selbmann" class="member-photo"
-                                loading="lazy">
+                            <img src="images/prof-Laura.jpeg" alt="Prof. Laura Selbmann" class="member-photo" loading="lazy">
                             <h4>Prof. Laura Selbmann</h4>
-                            <p>Tuscia University Italy</p>
+                            <p data-i18n="teamLauraInst">Universidade de Tuscia, Itália</p>
                         </div>
                         <div class="institution-logo">
                             <img src="images/tuscia.png" alt="Tuscia Logo" class="logo-img" loading="lazy">
                         </div>
                     </div>
-
                     <div class="international-member">
                         <div class="member-with-logo">
-                            <img src="images/prof-Yinggai.jpeg" alt="Prof. Yinggai Song" class="member-photo"
-                                loading="lazy">
+                            <img src="images/prof-Yinggai.jpeg" alt="Prof. Yinggai Song" class="member-photo" loading="lazy">
                             <h4>Prof. Yinggai Song</h4>
-                            <p>Peking University China</p>
+                            <p data-i18n="teamYinggaiInst">Universidade de Pequim, China</p>
                         </div>
                         <div class="institution-logo">
                             <img src="images/peking.png" alt="Peking Logo" class="logo-img" loading="lazy">
@@ -348,21 +304,20 @@
     <section id="results" class="results">
         <div class="container">
             <div class="section-header">
-                <h2>Results Summary</h2>
+                <h2 data-i18n="resultsTitle">Resumo de Resultados</h2>
                 <div class="header-line"></div>
             </div>
 
             <div class="results-content">
                 <div class="result-card">
-                    <h3>Monitoring in Brazilian Biomes</h3>
-                    <p>Analysis of environmental samples from different biomes: Amazon, Transition Zone, Caatinga,
-                        Atlantic Forest, Pantanal and Cerrado.</p>
+                    <h3 data-i18n="results1Title">Monitoramento em Biomas Brasileiros</h3>
+                    <p data-i18n="results1Text">Análise de amostras ambientais de diferentes biomas: Amazônia, Zona de Transição, Caatinga, Mata Atlântica, Pantanal e Cerrado.</p>
                     <ul class="biomes-list">
-                        <li>Caves</li>
-                        <li>Mangroves</li>
-                        <li>Soils from preserved, agricultural and urban areas</li>
-                        <li>River water and hemodialysis</li>
-                        <li>Hospital biological waste</li>
+                        <li data-i18n="biome1">Cavernas</li>
+                        <li data-i18n="biome2">Manguezais</li>
+                        <li data-i18n="biome3">Solos de áreas preservadas, agrícolas e urbanas</li>
+                        <li data-i18n="biome4">Água de rios e hemodiálise</li>
+                        <li data-i18n="biome5">Resíduos biológicos hospitalares</li>
                     </ul>
                     <div class="result-image">
                         <img src="images/image118.png" alt="Brazilian Biomes" loading="lazy">
@@ -370,22 +325,22 @@
                 </div>
 
                 <div class="result-card">
-                    <h3>Evaluated Strains</h3>
+                    <h3 data-i18n="results2Title">Cepas Avaliadas</h3>
                     <div class="lineages-grid">
                         <div class="lineage-group">
-                            <h4>Fungi</h4>
+                            <h4 data-i18n="fungi">Fungos</h4>
                             <ul>
                                 <li>Candida</li>
                                 <li>Aspergillus</li>
                                 <li>Fusarium</li>
-                                <li>Dermatophytes</li>
-                                <li>Black and Rare Yeasts</li>
+                                <li data-i18n="dermato">Dermatófitos</li>
+                                <li data-i18n="blackyeasts">Leveduras Pretas e Raras</li>
                                 <li>Sporothrix</li>
                                 <li>Cryptococcus</li>
                             </ul>
                         </div>
                         <div class="lineage-group">
-                            <h4>Bacteria</h4>
+                            <h4 data-i18n="bacteria">Bactérias</h4>
                             <ul>
                                 <li>ESKAPEE</li>
                                 <li>Enterococcus</li>
@@ -404,34 +359,34 @@
                 </div>
 
                 <div class="result-card">
-                    <h3>Applied Methodologies</h3>
+                    <h3 data-i18n="results3Title">Metodologias Aplicadas</h3>
                     <ul class="methodology-list">
-                        <li><strong>NGS Sequencing:</strong> Complete genomic analysis of resistant strains</li>
-                        <li><strong>Metagenomics:</strong> Environmental prospecting of AMR species and genes</li>
-                        <li><strong>Artificial Intelligence:</strong> Identification of new markers and biological patterns</li>
-                        <li><strong>Fosmid Libraries:</strong> Functional screening for elucidation of new targets</li>
-                        <li><strong>EUCAST Analysis:</strong> Evaluation of antimicrobial susceptibility</li>
+                        <li><strong data-i18n="meth1Label">Sequenciamento NGS:</strong> <span data-i18n="meth1Text">Análise genômica completa de cepas resistentes</span></li>
+                        <li><strong data-i18n="meth2Label">Metagenômica:</strong> <span data-i18n="meth2Text">Prospecção ambiental de espécies e genes RAM</span></li>
+                        <li><strong data-i18n="meth3Label">Inteligência Artificial:</strong> <span data-i18n="meth3Text">Identificação de novos marcadores e padrões biológicos</span></li>
+                        <li><strong data-i18n="meth4Label">Bibliotecas Fosmídicas:</strong> <span data-i18n="meth4Text">Triagem funcional para elucidação de novos alvos</span></li>
+                        <li><strong data-i18n="meth5Label">Análise EUCAST:</strong> <span data-i18n="meth5Text">Avaliação da suscetibilidade antimicrobiana</span></li>
                     </ul>
                 </div>
 
                 <div class="result-card">
-                    <h3>Project Statistics</h3>
+                    <h3 data-i18n="results4Title">Estatísticas do Projeto</h3>
                     <div class="stats-grid">
                         <div class="stat-item">
                             <div class="stat-number">167</div>
-                            <p>Metagenomes in Progress</p>
+                            <p data-i18n="stat1">Metagenomas em Andamento</p>
                         </div>
                         <div class="stat-item">
                             <div class="stat-number">173+</div>
-                            <p>Aspergillus Isolates</p>
+                            <p data-i18n="stat2">Isolados de Aspergillus</p>
                         </div>
                         <div class="stat-item">
                             <div class="stat-number">3.349</div>
-                            <p>AMR Genes Catalogued</p>
+                            <p data-i18n="stat3">Genes RAM Catalogados</p>
                         </div>
                         <div class="stat-item">
                             <div class="stat-number">826.520</div>
-                            <p>Amino Acid Sequences</p>
+                            <p data-i18n="stat4">Sequências de Aminoácidos</p>
                         </div>
                     </div>
                 </div>
@@ -442,76 +397,36 @@
     <section id="sponsors" class="sponsors">
         <div class="container">
             <div class="section-header">
-                <h2>Financial Support & Related Projects</h2>
+                <h2 data-i18n="sponsorsTitle">Apoio Financeiro e Projetos Relacionados</h2>
                 <div class="header-line"></div>
             </div>
 
-            <h3 class="sponsors-subtitle">Financial Support & Related Projects</h3>
+            <h3 class="sponsors-subtitle" data-i18n="sponsorsSubtitle">Apoio Financeiro e Projetos Relacionados</h3>
             <div class="sponsors-grid">
-                <div class="sponsor-item">
-                    <img src="images/1-sf-CNPq.png" alt="CNPq Logo" loading="lazy">
-                </div>
-                <div class="sponsor-item">
-                    <img src="images/2-sf-fndct.png" alt="FNDCT Logo" loading="lazy">
-                </div>
-                <div class="sponsor-item">
-                    <img src="images/3-sf-gov-federal.png" alt="Government Logo" loading="lazy">
-                </div>
-                <div class="sponsor-item">
-                    <img src="images/4-sf-inct.png" alt="INCT Logo" loading="lazy">
-                </div>
-                <div class="sponsor-item">
-                    <img src="images/4-sf-secretaria-saude.png" alt="Secretaria de Saúde Logo" loading="lazy">
-                </div>
-                <div class="sponsor-item">
-                    <img src="images/5-sf-capes.jpeg" alt="CAPES Logo" loading="lazy">
-                </div>
-                <div class="sponsor-item">
-                    <img src="images/6-sf-curitiba.jpeg" alt="Curitiba Logo" loading="lazy">
-                </div>
-                <div class="sponsor-item">
-                    <img src="images/7-sf-SUS.jpeg" alt="SUS Logo" loading="lazy">
-                </div>
+                <div class="sponsor-item"><img src="images/1-sf-CNPq.png" alt="CNPq Logo" loading="lazy"></div>
+                <div class="sponsor-item"><img src="images/2-sf-fndct.png" alt="FNDCT Logo" loading="lazy"></div>
+                <div class="sponsor-item"><img src="images/3-sf-gov-federal.png" alt="Government Logo" loading="lazy"></div>
+                <div class="sponsor-item"><img src="images/4-sf-inct.png" alt="INCT Logo" loading="lazy"></div>
+                <div class="sponsor-item"><img src="images/4-sf-secretaria-saude.png" alt="Secretaria de Saúde Logo" loading="lazy"></div>
+                <div class="sponsor-item"><img src="images/5-sf-capes.jpeg" alt="CAPES Logo" loading="lazy"></div>
+                <div class="sponsor-item"><img src="images/6-sf-curitiba.jpeg" alt="Curitiba Logo" loading="lazy"></div>
+                <div class="sponsor-item"><img src="images/7-sf-SUS.jpeg" alt="SUS Logo" loading="lazy"></div>
             </div>
 
-            <h3 class="sponsors-subtitle">International and National Partners, Institutions and Laboratories</h3>
+            <h3 class="sponsors-subtitle" data-i18n="partnersSubtitle">Parceiros, Instituições e Laboratórios Internacionais e Nacionais</h3>
             <div class="partners-grid">
-                <div class="partner-item">
-                    <img src="images/1-PIN-UFPR.jpeg" alt="UFPR Logo" loading="lazy">
-                </div>
-                <div class="partner-item">
-                    <img src="images/2-PIN-UFMA.png" alt="UFMA Logo" loading="lazy">
-                </div>
-                <div class="partner-item">
-                    <img src="images/3-PIN-UFMS.jpeg" alt="UFMS Logo" loading="lazy">
-                </div>
-                <div class="partner-item">
-                    <img src="images/4-PIN-UNILA.png" alt="UNILA Logo" loading="lazy">
-                </div>
-                <div class="partner-item">
-                    <img src="images/5-PIN-Pequeno-principe.png" alt="Pequeno Príncipe Logo" loading="lazy">
-                </div>
-                <div class="partner-item">
-                    <img src="images/6-PIN-ILMD.png" alt="ILMD Logo" loading="lazy">
-                </div>
-                <div class="partner-item">
-                    <img src="images/7-PIN-LABMICRO.jpeg" alt="LABMICRO Logo" loading="lazy">
-                </div>
-                <div class="partner-item">
-                    <img src="images/8-PIN-UEM.png" alt="UEM Logo" loading="lazy">
-                </div>
-                <div class="partner-item">
-                    <img src="images/9-PIN-VIRTUS.png" alt="VIRTUS Logo" loading="lazy">
-                </div>
-                <div class="partner-item">
-                    <img src="images/10-PIN-Hospital-Clinicas.jpeg" alt="Hospital Clínicas Logo" loading="lazy">
-                </div>
-                <div class="partner-item">
-                    <img src="images/11-PIN-UNIFESP.png" alt="UNIFESP Logo" loading="lazy">
-                </div>
-                <div class="partner-item">
-                    <img src="images/12-PIN-USP.jpeg" alt="USP Logo" loading="lazy">
-                </div>
+                <div class="partner-item"><img src="images/1-PIN-UFPR.jpeg" alt="UFPR Logo" loading="lazy"></div>
+                <div class="partner-item"><img src="images/2-PIN-UFMA.png" alt="UFMA Logo" loading="lazy"></div>
+                <div class="partner-item"><img src="images/3-PIN-UFMS.jpeg" alt="UFMS Logo" loading="lazy"></div>
+                <div class="partner-item"><img src="images/4-PIN-UNILA.png" alt="UNILA Logo" loading="lazy"></div>
+                <div class="partner-item"><img src="images/5-PIN-Pequeno-principe.png" alt="Pequeno Príncipe Logo" loading="lazy"></div>
+                <div class="partner-item"><img src="images/6-PIN-ILMD.png" alt="ILMD Logo" loading="lazy"></div>
+                <div class="partner-item"><img src="images/7-PIN-LABMICRO.jpeg" alt="LABMICRO Logo" loading="lazy"></div>
+                <div class="partner-item"><img src="images/8-PIN-UEM.png" alt="UEM Logo" loading="lazy"></div>
+                <div class="partner-item"><img src="images/9-PIN-VIRTUS.png" alt="VIRTUS Logo" loading="lazy"></div>
+                <div class="partner-item"><img src="images/10-PIN-Hospital-Clinicas.jpeg" alt="Hospital Clínicas Logo" loading="lazy"></div>
+                <div class="partner-item"><img src="images/11-PIN-UNIFESP.png" alt="UNIFESP Logo" loading="lazy"></div>
+                <div class="partner-item"><img src="images/12-PIN-USP.jpeg" alt="USP Logo" loading="lazy"></div>
             </div>
         </div>
     </section>
@@ -519,21 +434,21 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2>Contact</h2>
+                <h2 data-i18n="contactTitle">Contato</h2>
                 <div class="header-line"></div>
             </div>
 
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Principal Coordinator</h3>
+                    <h3 data-i18n="contactCoordLabel">Coordenadora Principal</h3>
                     <p><strong>Prof. Dra. Vania Aparecida Vicente</strong></p>
-                    <p>Federal University of Paraná (UFPR)</p>
-                    <p>Department of Basic Pathology</p>
+                    <p data-i18n="contactInst">Universidade Federal do Paraná (UFPR)</p>
+                    <p data-i18n="contactDept">Departamento de Patologia Básica</p>
                 </div>
 
                 <div class="contact-info">
-                    <h3>Participating Institutions</h3>
-                    <p>This project is a collaboration between multiple Brazilian and international institutions, funded by CNPq/MCTI/CT-Health.</p>
+                    <h3 data-i18n="contactPartLabel">Instituições Participantes</h3>
+                    <p data-i18n="contactPartText">Este projeto é uma colaboração entre múltiplas instituições brasileiras e internacionais, financiado pelo CNPq/MCTI/CT-Saúde.</p>
                 </div>
             </div>
         </div>
@@ -541,12 +456,13 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 AMR Project - Antimicrobial Resistance. All rights reserved.</p>
-            <p>Developed for educational and scientific research purposes.</p>
+            <p data-i18n="footerCopy">&copy; 2026 Projeto RAM - Resistência Antimicrobiana. Todos os direitos reservados.</p>
+            <p data-i18n="footerDev">Desenvolvido para fins educacionais e de pesquisa científica.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script src="i18n.js"></script>
 </body>
 
 </html>
