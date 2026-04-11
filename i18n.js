@@ -21,7 +21,7 @@ const translations = {
 
         // About
         aboutTitle: "Sobre o Projeto",
-        aboutCoordLabel: "Coordenadora",
+        aboutCoordLabel: "Coordenadora Geral",
         aboutCoordInst: "Universidade Federal do Paraná (UFPR)",
         aboutLineLabel: "Linha Temática",
         aboutLineText: "VI. Redes de pesquisa para identificação, monitoramento e sequenciamento genético de cepas resistentes em todo o território nacional",
@@ -118,7 +118,7 @@ const translations = {
         heroMeta: "CNPq/MCTI/CT-Health Call - Actions in Science, Technology and Innovation to Combat AMR No. 52/2022",
 
         aboutTitle: "About the Project",
-        aboutCoordLabel: "Coordinator",
+        aboutCoordLabel: "General Coordinator",
         aboutCoordInst: "Federal University of Paraná (UFPR)",
         aboutLineLabel: "Thematic Line",
         aboutLineText: "VI. Research Networks for identification, monitoring and genetic sequencing of resistant strains throughout the national territory",
@@ -209,7 +209,7 @@ const translations = {
         heroMeta: "Convocatoria CNPq/MCTI/CT-Salud - Acciones en Ciencia, Tecnología e Innovación para Combatir la RAM Nº 52/2022",
 
         aboutTitle: "Sobre el Proyecto",
-        aboutCoordLabel: "Coordinadora",
+        aboutCoordLabel: "Coordinadora General",
         aboutCoordInst: "Universidad Federal de Paraná (UFPR)",
         aboutLineLabel: "Línea Temática",
         aboutLineText: "VI. Redes de investigación para identificación, monitoreo y secuenciación genética de cepas resistentes en todo el territorio nacional",
